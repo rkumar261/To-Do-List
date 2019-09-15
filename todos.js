@@ -13,14 +13,11 @@ removeAllButton.addEventListener('click',removeAllItem)
 
 function addItem(){
 	var input = document.getElementById('input')
-	var item = input.value;
+	var item = input.value.trim()
 	ul = document.getElementById('list')
 	var textnode = document.createTextNode(item)
 	if (item === ''){
-		var temp = document.createElement('p')
-		var myValue = document.createTextNode('Enter your todo')
-		.appendChild(temp)
-		console.log('rakesh')
+		alert('Nothing to do? Get yourself a life! -_-')
 	}
 	else{
 		li = document.createElement('li')
